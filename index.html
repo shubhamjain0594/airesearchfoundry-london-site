@@ -27,6 +27,10 @@ h1 em{color:var(--acc);font-style:italic}
 section{padding:40px 0;border-top:2px solid var(--line)}
 h2{font:700 13px/1 "JetBrains Mono","IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em;margin:0 0 20px;color:var(--mute)}
 h2 span{color:var(--acc)}
+h2.big{font-size:15px;margin-bottom:26px}
+h4{font:700 22px/1.2 Georgia,serif;margin:28px 0 8px}
+h4+p{margin-top:0}
+section .grid{margin-bottom:4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
 .card{border:2px solid var(--ink);background:#fff;padding:20px}
 .card h3{font:700 22px/1.2 Georgia,serif;margin:0 0 8px}
@@ -47,7 +51,7 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 </head>
 <body>
 <div class="wrap">
-<nav><b>AI Research Foundry London</b><a href="#session">First session &darr;</a></nav>
+<nav><b>AI Research Foundry London</b><a href="#session">Session 01 &darr;</a></nav>
 
 <header class="hero">
 <span class="kicker">A paper club for AI researchers &middot; London</span>
@@ -57,27 +61,19 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 <span class="note">Free. Limited seats. Curated room.</span>
 </header>
 
-<section>
-<h2><span>01</span> / Why this exists</h2>
+<section id="community">
+<h2 class="big"><span>A</span> / The community</h2>
+<h4>Why</h4>
 <p>London has communities for builders. It has events to show off what you built. It has nothing for researchers to sit down and go deep on one shared paper. So we are making it.</p>
-</section>
-
-<section>
-<h2><span>02</span> / Where we start</h2>
-<p>In September, Dwarkesh Patel and Jerry Han published <a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a>. It started a conversation about how much data drives AI progress. We are starting the community right there. Session 01 is about data for building AI systems.</p>
-</section>
-
-<section>
-<h2><span>03</span> / How a session works</h2>
+<h4>Who</h4>
+<p>AI researchers in academia, big tech and startups. It is a community, not a sales pitch. Free forever. We curate the room so the right people end up in it. Led by <b>Shubham Jain</b>.</p>
+<h4>How</h4>
 <div class="grid">
 <div class="card"><h3>Read</h3><p>Come having read the paper if you can. We share links to summaries, so you know what you are about to hear.</p></div>
 <div class="card"><h3>Discuss</h3><p>We start with the paper. Then the room opens up. Questions, doubts, nitty gritty details.</p></div>
 <div class="card"><h3>Go deeper</h3><p>Seminar room energy. Lots of curiosity. A hunger to push the frontier.</p></div>
 </div>
-</section>
-
-<section>
-<h2><span>04</span> / The loop</h2>
+<h4>When</h4>
 <svg viewBox="0 0 800 180" role="img" aria-label="A loss curve going down as sessions go on">
 <rect x="1" y="1" width="798" height="178" fill="#fff" stroke="#16140f" stroke-width="2"/>
 <path d="M30 30 C 120 40, 150 120, 260 130 S 460 150, 560 152 S 720 154, 770 154" fill="none" stroke="#e8421e" stroke-width="4"/>
@@ -88,7 +84,8 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 </section>
 
 <section id="session">
-<h2><span>05</span> / Session 01</h2>
+<h2 class="big"><span>B</span> / Session 01</h2>
+<p>In September, Dwarkesh Patel and Jerry Han published <a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a>. It started a conversation about how much data drives AI progress. We are starting the community right there.</p>
 <div class="ticket">
 <div class="l">
 <h3>Data Is All You Need</h3>
@@ -103,12 +100,6 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 </div>
 <div class="r"><div class="m">Oct</div><div class="d">22</div><div class="m">6pm</div></div>
 </div>
-</section>
-
-<section>
-<h2><span>06</span> / Who it is for</h2>
-<p>AI researchers in academia, big tech and startups. It is a community, not a sales pitch. We curate the room so the right people end up in it. Free forever.</p>
-<p>Led by <b>Shubham Jain</b>.</p>
 </section>
 
 <footer>&copy; 2026 AI Research Foundry London</footer>
