@@ -30,6 +30,8 @@ h2 span{color:var(--acc)}
 h2.big{font-size:15px;margin-bottom:26px}
 h4{font:700 22px/1.2 Georgia,serif;margin:28px 0 8px}
 h4+p{margin-top:0}
+.session+.session{margin-top:40px}
+.story{margin-top:0}
 section .grid{margin-bottom:4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
 .card{border:2px solid var(--ink);background:#fff;padding:20px}
@@ -84,12 +86,15 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 </section>
 
 <section id="session">
-<h2 class="big"><span>B</span> / Session 01</h2>
-<p>In September, Dwarkesh Patel and Jerry Han published <a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a>. It started a conversation about how much data drives AI progress. We are starting the community right there.</p>
+<h2 class="big"><span>B</span> / Sessions</h2>
+<!-- To add a session: copy one whole <article class="session"> block, paste it ABOVE the previous one (newest first), edit the text. -->
+
+<article class="session">
+<p class="story">In September, Dwarkesh Patel and Jerry Han published <a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a>. It started a conversation about how much data drives AI progress. We are starting the community right there.</p>
 <div class="ticket">
 <div class="l">
-<h3>Data Is All You Need</h3>
-<p style="margin:0 0 12px">Session 01. Data creation, curation and scaling.</p>
+<h3>Session 01: Data Is All You Need</h3>
+<p style="margin:0 0 12px">Data creation, curation and scaling.</p>
 <dl>
 <dt>When</dt><dd>Thursday 22 October 2026, 6pm</dd>
 <dt>Where</dt><dd>Pillar VC, King's Cross, London</dd>
@@ -100,6 +105,8 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 </div>
 <div class="r"><div class="m">Oct</div><div class="d">22</div><div class="m">6pm</div></div>
 </div>
+</article>
+
 </section>
 
 <footer>&copy; 2026 AI Research Foundry London</footer>
