@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Research Foundry London - a paper club for AI researchers</title>
 <meta name="description" content="AI Research Foundry London is a paper club for researchers from big tech labs, academia and startups. First session: Thursday 22 October 2026, 6pm, Pillar VC, King's Cross.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f4efe4;--ink:#16140f;--mute:#6b665a;--acc:#e8421e;--line:#16140f}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "JetBrains Mono","IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:-.02em}
 .wrap{max-width:860px;margin:0 auto;padding:0 24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:2px solid var(--line);font-size:14px;letter-spacing:.04em}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:2px solid var(--line);font-size:14px;letter-spacing:0}
 nav b{text-transform:uppercase}
 nav a{color:var(--ink)}
 p a{color:var(--acc);font-weight:700}
 .hero{padding:56px 0 40px}
-.kicker{display:inline-block;background:var(--ink);color:var(--bg);padding:2px 10px;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+.kicker{display:inline-block;background:transparent;color:var(--acc);border:1.5px solid var(--acc);padding:3px 10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
 h1{font:700 clamp(38px,8vw,76px)/1.02 Georgia,"Times New Roman",serif;margin:18px 0 20px;letter-spacing:-.02em}
 h1 em{color:var(--acc);font-style:italic}
 .lead{font-size:20px;max-width:640px;margin:0 0 28px}
@@ -24,7 +25,7 @@ h1 em{color:var(--acc);font-style:italic}
 .btn.soon{background:#fff;color:var(--ink)}
 .note{display:block;margin-top:14px;color:var(--mute);font-size:14px}
 section{padding:40px 0;border-top:2px solid var(--line)}
-h2{font:700 13px/1 ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.14em;margin:0 0 20px;color:var(--mute)}
+h2{font:700 13px/1 "JetBrains Mono","IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em;margin:0 0 20px;color:var(--mute)}
 h2 span{color:var(--acc)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
 .card{border:2px solid var(--ink);background:#fff;padding:20px}
@@ -34,7 +35,7 @@ h2 span{color:var(--acc)}
 .ticket .l{padding:26px}
 .ticket .r{padding:26px;border-left:2px dashed var(--ink);text-align:center;display:flex;flex-direction:column;justify-content:center;background:var(--acc);color:#fff}
 .ticket .r .d{font:700 56px/1 Georgia,serif}
-.ticket .r .m{text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+.ticket .r .m{text-transform:uppercase;letter-spacing:.07em;font-size:13px}
 .ticket h3{font:700 28px/1.15 Georgia,serif;margin:0 0 12px}
 .ticket dl{margin:0;display:grid;grid-template-columns:70px 1fr;gap:4px 12px;font-size:15px}
 .ticket dt{color:var(--mute)}.ticket dd{margin:0}
@@ -80,8 +81,8 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);fo
 <svg viewBox="0 0 800 180" role="img" aria-label="A loss curve going down as sessions go on">
 <rect x="1" y="1" width="798" height="178" fill="#fff" stroke="#16140f" stroke-width="2"/>
 <path d="M30 30 C 120 40, 150 120, 260 130 S 460 150, 560 152 S 720 154, 770 154" fill="none" stroke="#e8421e" stroke-width="4"/>
-<text x="40" y="26" font-family="monospace" font-size="14" fill="#6b665a">loss</text>
-<text x="700" y="172" font-family="monospace" font-size="14" fill="#6b665a">sessions &rarr;</text>
+<text x="40" y="26" font-family="JetBrains Mono,monospace" font-size="14" fill="#6b665a">loss</text>
+<text x="700" y="172" font-family="JetBrains Mono,monospace" font-size="14" fill="#6b665a">sessions &rarr;</text>
 </svg>
 <p style="margin-top:16px">We meet once a month, or once every six weeks. Each time: a paper, a discussion, and a room of people who care about the details.</p>
 </section>
