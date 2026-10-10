@@ -3,51 +3,100 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Research Foundry London</title>
-<meta name="description" content="A London community where researchers from big tech labs, academia and startups discuss the latest AI research, in the spirit of a paper club.">
+<title>AI Research Foundry London - a paper club for AI researchers</title>
+<meta name="description" content="AI Research Foundry London is a paper club for researchers from big tech labs, academia and startups. First session: Thursday 22 October 2026, 6pm, Pillar VC, King's Cross.">
 <style>
+:root{--bg:#f4efe4;--ink:#16140f;--mute:#6b665a;--acc:#e8421e;--line:#16140f}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#0f1220;color:#e8eaf2;line-height:1.6}
-.wrap{max-width:720px;margin:0 auto;padding:0 24px}
-header{padding:96px 0 48px;background:radial-gradient(circle at 20% 0%,#2a2f66 0,#0f1220 60%)}
-.tag{letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#8f9bff}
-h1{font-size:clamp(34px,7vw,56px);line-height:1.1;margin:12px 0 20px}
-.lead{font-size:20px;color:#c4c9de;max-width:600px}
-section{padding:36px 0}
-h2{font-size:22px;margin:0 0 12px}
-.card{background:#171b30;border:1px solid #262b4a;border-radius:14px;padding:24px}
-.card dl{margin:0;display:grid;grid-template-columns:90px 1fr;gap:8px 16px}
-.card dt{color:#8f9bff}.card dd{margin:0}
-.btn{display:inline-block;margin-top:18px;padding:12px 20px;border-radius:10px;background:#262b4a;color:#c4c9de;font-weight:600}
-footer{padding:40px 0 60px;color:#7b82a3;font-size:14px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:2px solid var(--line);font-size:14px;letter-spacing:.04em}
+nav b{text-transform:uppercase}
+nav a{color:var(--ink)}
+.hero{padding:56px 0 40px}
+.kicker{display:inline-block;background:var(--ink);color:var(--bg);padding:2px 10px;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+h1{font:700 clamp(38px,8vw,76px)/1.02 Georgia,"Times New Roman",serif;margin:18px 0 20px;letter-spacing:-.02em}
+h1 em{color:var(--acc);font-style:italic}
+.lead{font-size:20px;max-width:640px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+.btn.soon{background:#fff;color:var(--ink)}
+.note{display:block;margin-top:14px;color:var(--mute);font-size:14px}
+section{padding:40px 0;border-top:2px solid var(--line)}
+h2{font:700 13px/1 ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.14em;margin:0 0 20px;color:var(--mute)}
+h2 span{color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{border:2px solid var(--ink);background:#fff;padding:20px}
+.card h3{font:700 22px/1.2 Georgia,serif;margin:0 0 8px}
+.card p{margin:0;font-size:15px}
+.ticket{display:grid;grid-template-columns:1fr auto;border:2px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink)}
+.ticket .l{padding:26px}
+.ticket .r{padding:26px;border-left:2px dashed var(--ink);text-align:center;display:flex;flex-direction:column;justify-content:center;background:var(--acc);color:#fff}
+.ticket .r .d{font:700 56px/1 Georgia,serif}
+.ticket .r .m{text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+.ticket h3{font:700 28px/1.15 Georgia,serif;margin:0 0 12px}
+.ticket dl{margin:0;display:grid;grid-template-columns:70px 1fr;gap:4px 12px;font-size:15px}
+.ticket dt{color:var(--mute)}.ticket dd{margin:0}
+.ticket .btn{margin-top:20px}
+svg{width:100%;height:auto;display:block}
+footer{padding:30px 0 60px;border-top:2px solid var(--line);color:var(--mute);font-size:14px}
+@media(max-width:600px){.ticket{grid-template-columns:1fr}.ticket .r{border-left:0;border-top:2px dashed var(--ink);flex-direction:row;gap:14px;justify-content:center;align-items:baseline}.ticket .r .d{font-size:40px}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-<div class="tag">London</div>
-<h1>AI Research Foundry London</h1>
-<p class="lead">A community where researchers from big tech labs, academia and startups discuss the latest AI research ideas, in the spirit of a paper club.</p>
-</div></header>
-<main class="wrap">
+<div class="wrap">
+<nav><b>AI Research Foundry London</b><a href="https://luma.com/8ct1lo38">First session &rarr;</a></nav>
+
+<header class="hero">
+<span class="kicker">A paper club for AI researchers &middot; London</span>
+<h1>Read the paper.<br>Argue with the <em>idea</em>.</h1>
+<p class="lead">AI Research Foundry London is a community where researchers from big tech labs, academia and startups get together to discuss the latest AI research and the hard problems of building AI systems, then dig deeper. In the spirit of a paper club.</p>
+<a class="btn soon" href="https://luma.com/8ct1lo38">Register for session 01</a>
+<span class="note">Free to attend. Register on Luma to get the address.</span>
+</header>
+
 <section>
-<h2>What we do</h2>
-<p>We come together to discuss the latest AI research ideas and the pressing problems in building AI systems, and dive deeper into them. In the process, we push AI research further.</p>
+<h2><span>01</span> / What this is</h2>
+<div class="grid">
+<div class="card"><h3>Papers, not pitches</h3><p>We pick the latest AI research ideas and take them apart together. Curiosity first, slides second.</p></div>
+<div class="card"><h3>Real problems</h3><p>The conversation goes beyond the paper to what breaks when you build AI systems for real.</p></div>
+<div class="card"><h3>Mixed room</h3><p>Researchers from big tech labs, universities and startups, in one room, talking to each other.</p></div>
+</div>
 </section>
+
 <section>
-<h2>First session</h2>
-<div class="card">
+<h2><span>02</span> / The loop</h2>
+<svg viewBox="0 0 800 180" role="img" aria-label="A loss curve going down as sessions go on">
+<rect x="1" y="1" width="798" height="178" fill="#fff" stroke="#16140f" stroke-width="2"/>
+<path d="M30 30 C 120 40, 150 120, 260 130 S 460 150, 560 152 S 720 154, 770 154" fill="none" stroke="#e8421e" stroke-width="4"/>
+<text x="40" y="26" font-family="monospace" font-size="14" fill="#6b665a">loss</text>
+<text x="700" y="172" font-family="monospace" font-size="14" fill="#6b665a">sessions &rarr;</text>
+</svg>
+<p style="margin-top:16px">Each session we read, discuss and go deeper. In the process, we push AI research further.</p>
+</section>
+
+<section id="session">
+<h2><span>03</span> / Session 01</h2>
+<div class="ticket">
+<div class="l">
+<h3>AI Research Foundry London: the first session</h3>
 <dl>
 <dt>When</dt><dd>Thursday 22 October 2026, 6pm</dd>
 <dt>Where</dt><dd>Pillar VC, King's Cross, London</dd>
+<dt>Cost</dt><dd>Free</dd>
 </dl>
-<span class="btn">Registration link coming soon</span>
+<a class="btn soon" href="https://luma.com/8ct1lo38">Register on Luma</a>
+</div>
+<div class="r"><div class="m">Oct</div><div class="d">22</div><div class="m">6pm</div></div>
 </div>
 </section>
+
 <section>
-<h2>Led by</h2>
-<p>Shubham Jain</p>
+<h2><span>04</span> / Who runs it</h2>
+<p>Led by <b>Shubham Jain</b>.</p>
 </section>
-</main>
-<footer><div class="wrap">&copy; 2026 AI Research Foundry London</div></footer>
+
+<footer>&copy; 2026 AI Research Foundry London</footer>
+</div>
 </body>
 </html>
